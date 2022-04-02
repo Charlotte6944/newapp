@@ -14,4 +14,8 @@ export class ListAlimentComponent implements OnInit {
   ngOnInit(): void {
     this.aliments = this.alimentService.aliments;
   }
+
+  public removeAliment(index: number): void {
+    this.alimentService.removeOne(index);
+  }
 }
